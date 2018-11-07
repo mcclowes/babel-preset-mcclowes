@@ -4,8 +4,7 @@ module.exports = {
 		require.resolve("babel-preset-react"),
 	],
 	plugins: [
-		// Plain
-
+		// plain
 		require.resolve("babel-plugin-add-react-displayname"),
 		require.resolve("babel-plugin-inline-react-svg"),
 		require.resolve("babel-plugin-preval"),
@@ -15,8 +14,7 @@ module.exports = {
 		require.resolve("babel-plugin-transform-export-extensions"),
 		require.resolve("babel-plugin-transform-regenerator"),
 
-		// Configured
-
+		// configured
 		[	
 			require.resolve("babel-plugin-styled-components"),	
 			{ "ssr": true },	
@@ -39,9 +37,8 @@ module.exports = {
 			},
 		],	
 
-		// Optional
-
-		require.resolve("transform-optional-chaining"),
-		require.resolve("transform-pipeline-operator"),
+		// optional
+		require.resolve("@babel/plugin-proposal-optional-chaining"),
+		require.resolve("@babel/plugin-proposal-pipeline-operator"),
 	],
 };
