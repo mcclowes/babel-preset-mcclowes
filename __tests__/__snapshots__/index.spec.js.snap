@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel config exports correctly 1`] = `
+Array [
+  "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/preset-env/lib/index.js",
+  "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/preset-react/lib/index.js",
+  "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/preset-stage-0/lib/index.js",
+]
+`;
+
+exports[`babel config exports correctly 2`] = `
+Array [
+  "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/plugin-syntax-dynamic-import/lib/index.js",
+  "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/plugin-transform-regenerator/lib/index.js",
+  Array [
+    "/Users/max.clayton/Development/mcclowes/babel-preset-mcclowes/node_modules/@babel/plugin-transform-runtime/lib/index.js",
+    Object {
+      "polyfill": false,
+    },
+  ],
+]
+`;
