@@ -14,20 +14,27 @@ module.exports = {
 					: "commonjs",
 			},
 		],
-		"stage-3",
 		"react",
 	],
 	plugins: [
-		"transform-class-properties",
-		"transform-decorators-legacy",
+		"@babel/transform-class-properties",
+		"@babel/transform-decorators-legacy",
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-decorators",
+		"@babel/plugin-proposal-json-strings",
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-syntax-import-meta",
+		"@babel/plugin-proposal-optional-chaining",
+		"@babel/plugin-proposal-pipeline-operator",
+
 		[
-			"ramda",
+			"@babel/ramda",
 			{
 				useES: false,
 			},
 		],
 		[
-			"transform-runtime",
+			"@babel/plugin-transform-runtime",
 			{
 				polyfill: false,
 				regenerator: true,
