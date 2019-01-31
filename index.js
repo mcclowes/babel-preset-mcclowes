@@ -1,19 +1,37 @@
+const targets = {
+	browsers: "> 1%",
+	node: "current",
+};
+
 module.exports = {
 	presets: [
-		require.resolve("@babel/preset-env"),
-		require.resolve("@babel/preset-react"),
-		require.resolve('@babel/preset-stage-0')
-	],
-
-	plugins: [
-		require.resolve("@babel/plugin-syntax-dynamic-import"),
-		require.resolve("@babel/plugin-transform-regenerator"),
-
 		[
-			require.resolve("@babel/plugin-transform-runtime"),
+			"env",
+			{
+				targets,
+				modules: (process.env.BABEL_OPTIONS || "").includes("webpack")
+					? false
+					: "commonjs",
+			},
+		],
+		"stage-3",
+		"react",
+	],
+	plugins: [
+		"transform-class-properties",
+		"transform-decorators-legacy",
+		[
+			"ramda",
+			{
+				useES: false,
+			},
+		],
+		[
+			"transform-runtime",
 			{
 				polyfill: false,
+				regenerator: true,
 			},
-		]
-	]
+		],
+	],
 };
