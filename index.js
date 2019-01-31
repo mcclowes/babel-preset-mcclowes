@@ -26,13 +26,7 @@ module.exports = {
 		"@babel/plugin-syntax-import-meta",
 		"@babel/plugin-proposal-optional-chaining",
 		"@babel/plugin-proposal-pipeline-operator",
-
-		[
-			"@babel/ramda",
-			{
-				useES: false,
-			},
-		],
+		
 		[
 			"@babel/plugin-transform-runtime",
 			{
