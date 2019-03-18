@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell.git"
+		"url": "https://github.com/mcclowes/babel-preset-mcclowes.git"
 	},
 	"keywords": [
 		"babel",
@@ -23,25 +23,25 @@
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell/issues"
+		"url": "https://github.com/mcclowes/babel-preset-mcclowes/issues"
 	},
-	"homepage": "https://github.com/CodogoFreddie/babel-preset-freddie-ridell#readme",
+	"homepage": "https://github.com/mcclowes/babel-preset-mcclowes#readme",
 	"dependencies": {
-		"@babel/core": "^7.0.0",
-		"@babel/plugin-proposal-class-properties": "^7.0.0",
+		"@babel/core": "^7.3.4",
+		"@babel/plugin-proposal-class-properties": "^7.3.4",
 		"@babel/plugin-proposal-decorators": "^7.0.0",
 		"@babel/plugin-proposal-json-strings": "^7.0.0",
 		"@babel/plugin-proposal-optional-chaining": "^7.2.0",
-		"@babel/plugin-proposal-pipeline-operator": "^7.3.0",
+		"@babel/plugin-proposal-pipeline-operator": "^7.3.2",
 		"@babel/plugin-syntax-dynamic-import": "^7.0.0",
 		"@babel/plugin-syntax-import-meta": "^7.0.0",
-		"@babel/plugin-transform-runtime": "^7.0.0",
-		"@babel/preset-env": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.3.4",
+		"@babel/preset-env": "^7.3.4",
 		"@babel/preset-react": "^7.0.0",
-		"@babel/runtime": "^7.0.0"
+		"@babel/runtime": "^7.3.4"
 	},
 	"devDependencies": {
-		"jest": "^24.0.0",
-		"prettier": "1.16.3"
+		"jest": "^24.5.0",
+		"prettier": "^1.16.4"
 	}
 }
