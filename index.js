@@ -7,7 +7,7 @@ module.exports = () => {
   return {
   	presets: [
   		[
-  			"env",
+  			"@babel/present-env",
   			{
   				targets,
   				modules: (process.env.BABEL_OPTIONS || "").includes("webpack")
@@ -15,7 +15,7 @@ module.exports = () => {
   					: "commonjs",
   			},
   		],
-  		"react",
+      "@babel/preset-react",
   	],
   	plugins: [
   		// Stage 0
@@ -43,17 +43,15 @@ module.exports = () => {
       "@babel/plugin-proposal-json-strings"
 
       // Custom
-  		// "@babel/transform-class-properties",
-  		// "@babel/transform-decorators-legacy",
-  		// "@babel/plugin-proposal-decorators",
-  		
-  		// [
-  		// 	"@babel/plugin-transform-runtime",
-  		// 	{
-  		// 		polyfill: false,
-  		// 		regenerator: true,
-  		// 	},
-  		// ],
+  		"@babel/transform-class-properties",
+  		"@babel/transform-decorators-legacy",
+  		[
+  			"@babel/plugin-transform-runtime",
+  			{
+  				polyfill: false,
+  				regenerator: true,
+  			},
+  		],
   	],
   }
 };

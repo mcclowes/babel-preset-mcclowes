@@ -1,1 +1,1 @@
-# babel-preset-freddie-ridell
+# babel-preset-mcclowes
