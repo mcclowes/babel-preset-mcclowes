@@ -1,24 +1,24 @@
 const targets = {
-	browsers: "> 1%",
-	node: "current",
+  browsers: "> 1%",
+  node: "current",
 };
 
 module.exports = () => {
   return {
-  	presets: [
-  		[
-  			"@babel/present-env",
-  			{
-  				targets,
-  				modules: (process.env.BABEL_OPTIONS || "").includes("webpack")
-  					? false
-  					: "commonjs",
-  			},
-  		],
-      "@babel/preset-react",
-  	],
-  	plugins: [
-  		// Stage 0
+    'presets': [
+      [
+        "@babel/env",
+        {
+          targets,
+          modules: (process.env.BABEL_OPTIONS || "").includes("webpack")
+            ? false
+            : "commonjs",
+        },
+      ],
+      "@babel/react",
+    ],
+    'plugins': [
+      // Stage 0
       "@babel/plugin-proposal-function-bind",
 
       // Stage 1
@@ -43,15 +43,15 @@ module.exports = () => {
       "@babel/plugin-proposal-json-strings",
 
       // Custom
-  		// "@babel/transform-class-properties",
-  		// "@babel/transform-decorators-legacy",
-  		[
-  			"@babel/plugin-transform-runtime",
-  			{
-  				polyfill: false,
-  				regenerator: true,
-  			}
-  		]
-  	]
+      // "@babel/transform-class-properties",
+      // "@babel/transform-decorators-legacy",
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          'polyfill': false,
+          'regenerator': true,
+        }
+      ]
+    ]
   }
 };
