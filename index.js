@@ -48,7 +48,6 @@ module.exports = () => {
       [
         "@babel/plugin-transform-runtime",
         {
-          'polyfill': false,
           'regenerator': true,
         }
       ]
