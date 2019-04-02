@@ -43,8 +43,8 @@ module.exports = () => {
       "@babel/plugin-proposal-json-strings"
 
       // Custom
-  		"@babel/transform-class-properties",
-  		"@babel/transform-decorators-legacy",
+  		// "@babel/transform-class-properties",
+  		// "@babel/transform-decorators-legacy",
   		[
   			"@babel/plugin-transform-runtime",
   			{
