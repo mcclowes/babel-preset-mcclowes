@@ -1,6 +1,6 @@
 {
 	"name": "babel-preset-mcclowes",
-	"version": "0.9.4",
+	"version": "0.9.5",
 	"description": "my babel presets",
 	"main": "index.js",
 	"prettier": {
